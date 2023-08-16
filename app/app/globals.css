@@ -27,21 +27,52 @@ body {
 }
 
 
-.app {
-  text-align: center;
-  padding: 2rem;
+.App {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
-.ticker {
-  width: 100%;
-  height: 30px;
-  overflow: hidden;
-  border: 1px solid #ccc;
+.container {
+  margin-top: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.ticker-item {
-  display: inline-block;
-  padding: 0 20px;
-  font-size: 1.2rem;
-  white-space: nowrap;
+.menu-item {
+  width: 200px;
+  perspective: 2000px;
 }
+
+.sub-menu {
+  position: absolute;
+  top: 20px;
+  padding: 15px;
+  background-color: #ccc;
+  border-radius: 6px;
+
+  transform-origin: 50% -30px;
+}
+
+.sub-menu-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 0;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.sub-menu-container {
+}
+
+.sub-menu-item {
+  margin-bottom: 5px;
+}
+
+
